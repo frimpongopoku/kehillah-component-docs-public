@@ -1,0 +1,138 @@
+@import url("./../../shared/css/index.css");
+
+.default-dropdown-selector {
+  display: inline-flex;
+  cursor: pointer;
+  border: solid 0px transparent;
+  border-bottom-width: 4px;
+  padding: 5px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+.default-dropdown-selector:hover {
+  border-bottom-color: var(--app-theme-lighter);
+}
+
+.full-width-selector {
+  width: 100%;
+  padding: 15px 20px;
+  border: solid 2px var(--app-theme-lighter);
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.full-width-selector span {
+  color: var(--app-theme-lighter);
+  text-transform: capitalize;
+}
+
+.full-width-selector:hover {
+  border-color: var(--app-theme-hover);
+  transition: 0.2s ease-out;
+  /* background: var(--app-theme-lighter); */
+}
+.full-width-selector-single:hover {
+  border-color: var(--app-theme-hover);
+  transition: 0.2s ease-out;
+  background: var(--app-theme-lighter);
+}
+
+.full-width-selector-single:hover span {
+  color: white !important;
+  transition: 0.2s ease-out;
+}
+.full-width-selector-single:hover svg {
+  color: white !important;
+  transition: 0.2s ease-out;
+}
+
+.dropdown-children-container {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 3;
+  border-radius: 5px;
+  background: white;
+}
+
+.dropdown-children-container-full {
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  z-index: 3;
+  border-radius: 5px;
+  width: 100%;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dropdown-item {
+  cursor: pointer;
+  padding: 15px 15px;
+  color: black;
+  text-align: left;
+  text-transform: capitalize;
+  overflow-wrap: break-word;
+}
+.dropdown-item:hover {
+  background: var(--app-theme-lighter);
+  color: white;
+  transition: 0.2s ease-out;
+}
+
+.dropdown-item:active {
+  background: var(--app-theme-hover);
+}
+
+.ghost-curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  opacity: 0;
+}
+
+.selected-item {
+  background: var(--app-theme-lighter);
+  color: white !important;
+}
+
+.selected-item:hover {
+  background: antiquewhite !important;
+  color: black !important;
+  transition: 0.2s ease-out;
+}
+
+.dropdown-caret {
+  margin-left: auto;
+  color: var(--app-theme-lighter);
+}
+
+.ribbon {
+  padding: 6px 16px;
+  background: #efefef;
+  border-radius: 55px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  margin: 0px 2px;
+  cursor: pointer;
+  color: black !important;
+}
+.ribbon:hover {
+  background: #e8e8e8;
+  box-shadow: var(--elevate-1);
+  transition: 0.2s ease-out;
+}
+
+.ribbon svg {
+  color: var(--app-theme-danger);
+  margin-left: 4px;
+}

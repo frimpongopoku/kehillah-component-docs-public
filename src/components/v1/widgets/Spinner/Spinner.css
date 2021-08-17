@@ -1,0 +1,22 @@
+.spinner {
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.spinner.OneHalfCircleType,
+.spinner.TwoHalfCirclesType {
+  border-color: transparent;
+}
+
+.spinner.TransparentCircleType {
+  border-color: #eee;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,63 @@
+@import url("./../../shared/css/index.css");
+
+.checkbox-empty-box {
+  height: 25px;
+  width: 25px;
+  border: solid 4px var(--app-theme-lighter);
+  margin: 4px;
+  border-radius: 2px;
+}
+
+.checkbox-default-container {
+  padding: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.checkbox-default-container p {
+  font-size: 17px;
+  margin: 4px;
+  text-transform: capitalize;
+  color: var(--app-theme-lighter);
+}
+
+.checkbox-default-container:hover p {
+  color: var(--app-theme-hover);
+  transition: 0.2s ease-in;
+}
+.checkbox-default-container:active p {
+  color: var(--app-theme-active);
+  transition: 0.2s ease-in;
+}
+
+.checkbox-default-container:hover .checkbox-empty-box {
+  border-color: var(--app-theme-hover);
+  transition: 0.2s ease-in;
+}
+
+.checkbox-default-container:active .checkbox-empty-box {
+  color: var(--app-theme-active);
+  transition: 0.2s ease-in;
+}
+
+.checkbox-default-container:hover .hovering-checkmark {
+  color: var(--app-theme-hover);
+  transition: 0.2s ease-in;
+}
+
+.checkbox-default-container:active .hovering-checkmark {
+  color: var(--app-theme-active);
+  transition: 0.2s ease-in;
+}
+
+.hovering-checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  color: var(--app-theme-lighter);
+}

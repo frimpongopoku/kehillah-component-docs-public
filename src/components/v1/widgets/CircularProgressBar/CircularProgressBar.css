@@ -1,0 +1,33 @@
+.circular-progress {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.circular-progress svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress circle {
+  fill: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.circular-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  /* font-family: sans-serif;
+   */
+  font-size: 0.9rem;
+  transition: all 0.5s linear;
+  animation: fadeIn 1s linear forwards;
+  font-weight: 600;
+}
+
+.test .percentage {
+  top: 10%;
+}

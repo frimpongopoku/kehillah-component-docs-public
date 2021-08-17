@@ -1,0 +1,163 @@
+@import url("./../shared/css/index.css");
+
+@keyframes move-up-animation {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes move-down-animation {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.form-title {
+  color: var(--app-theme);
+}
+.main-container {
+  width: 100%;
+  padding: 10px 25px;
+  text-align: left;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.label-css {
+  font-size: 15px;
+  color: #bdbcbc;
+  margin: 10px 0px;
+  display: block;
+}
+
+.form-bottom-nav {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.error-label-css {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: inherit;
+  background: #f9e9e9;
+  color: maroon;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.success-label-css {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: inherit;
+  background: #edfde3;
+  color: #3a5236;
+  border-radius: 3px;
+}
+
+.page-round-btn-css {
+  display: inline-block;
+  padding: 15px 17px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100%;
+  border: solid 2px var(--app-theme);
+  cursor: pointer;
+  margin: 4px;
+  color: var(--app-theme);
+}
+
+.page-round-btn-css svg {
+  font-size: 30px;
+}
+
+.page-round-btn-css:hover {
+  background: var(--app-theme-hover);
+  border-color: var(--app-theme-hover);
+  color: white;
+  transition: 0.2s ease-out;
+}
+
+.page-round-btn-css:hover {
+  background: var(--app-theme-active);
+  border-color: var(--app-theme-active);
+  color: white;
+  transition: 0.2s ease-out;
+}
+
+.page-active-css {
+  background: var(--app-theme-active);
+  color: white;
+  border-color: var(--app-theme-active);
+}
+
+.page-active-css:hover {
+  background: antiquewhite;
+  color: var(--app-theme-hover);
+  transition: 0.2s ease-out;
+}
+
+.multi-step-main-container-css {
+  min-height: 60vh;
+  width: 100%;
+  padding: 0px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80vw;
+  position: relative;
+}
+
+.bottom-nav-btns-container {
+  width: 100%;
+  padding: 25px;
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  padding-left: 20%;
+}
+
+.disable-round-btns {
+  border-color: Grey;
+  opacity: 0.5;
+}
+
+.disable-round-btns:hover {
+  color: grey;
+  border-color: grey;
+  background: white;
+}
+
+.disable-round-btns:active {
+  background: white;
+  color: grey;
+}
+
+.disable-round-btns svg {
+  color: grey;
+}
+
+.move-up-animation-css {
+  animation: move-up-animation 0.4s ease-out;
+}
+
+.move-down-animation-css {
+  animation-delay: 4s;
+  animation: move-down-animation 0.3s ease-out;
+}

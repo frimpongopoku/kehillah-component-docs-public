@@ -1,0 +1,87 @@
+.modal-root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+  background-color: rgba(13, 14, 15, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.modal-container {
+  background-color: #eee;
+  width: 20vw;
+  height: 10rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.modal-container-small {
+  width: 50vw;
+  min-height: 40vw;
+}
+
+.modal-container-medium {
+  width: 70vw;
+  min-height: 60vw;
+}
+
+.modal-container-large {
+  width: 90vw;
+  min-height: 80vw;
+}
+
+.modal-content {
+  padding: 1rem;
+  flex: 1 0 0;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+}
+
+.modal-close-btn {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 560px) {
+  .modal-container-small {
+    width: 15rem;
+    min-height: 7rem;
+  }
+
+  .modal-container-medium {
+    width: 20rem;
+    min-height: 12rem;
+  }
+
+  .modal-container-large {
+    width: 25rem;
+    min-height: 15rem;
+  }
+}

@@ -1,0 +1,197 @@
+@import url("./../../shared/css/index.css");
+
+.pdf-preview-box {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--elevate-float);
+}
+
+.pdf-preview-box svg {
+  font-size: 9rem;
+  color: maroon;
+}
+
+.pdf-preview-box:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-out;
+}
+
+.pdf-preview-box:active {
+  transform: scale(1.01);
+  transition: 0.2s ease-out;
+}
+.link-btn {
+  font-size: medium;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.link-btn {
+  text-decoration: underline;
+}
+.thumbnail-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.thumbnail-img-baby {
+  position: absolute;
+  bottom: 0px;
+  left: -18px;
+  transform: rotate(20deg);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: solid 2px transparent;
+  object-position: center;
+  margin: 6px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.thumbnail-img-baby:active {
+  transform: scale(3);
+  border-color: inherit;
+  transition: 0.2s ease-out;
+}
+.thumbnail-img-baby:hover {
+  border-color: var(--app-theme-lighter);
+  transition: 0.2s ease-in-out;
+}
+
+.thumbnail-img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  object-position: center;
+  margin: 6px;
+  cursor: pointer;
+  border: solid 2px transparent;
+}
+
+.thumbnail-img:hover {
+  transform: scale(1.03);
+  border-color: var(--app-theme-lighter);
+  transition: 0.2s ease-in-out;
+}
+
+.thumbnail-img:active {
+  transform: scale(1.1);
+  transition: 0.1s ease-out;
+}
+
+.thumbnail-pdf-box {
+  height: 80px;
+  width: 80px;
+  border-radius: 6px;
+  margin: 6px;
+  cursor: pointer;
+  border: solid 2px transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--elevate-float);
+}
+
+.thumbnail-pdf-box:hover {
+  transform: scale(1.03);
+  border-color: var(--app-theme-lighter);
+  transition: 0.2s ease-in-out;
+}
+
+.thumbnail-pdf-box:active {
+  transform: scale(1.1);
+  transition: 0.1s ease-out;
+}
+
+.thumbnail-pdf-box svg {
+  font-size: 3rem;
+  color: maroon;
+}
+.uploader-container {
+  border: dashed 2px #efefef;
+  border-radius: 5px;
+  padding: 15px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  min-height: 300px;
+  margin-top: 10px;
+}
+
+.uploader-icon {
+  color: var(--app-theme-lighter);
+  cursor: pointer;
+  font-size: 70px;
+  border: solid 1px #f5f5f5;
+  border-radius: 100%;
+  padding: 50px;
+}
+
+.uploader-icon:hover {
+  background: var(--app-theme-hover);
+  color: white;
+  transition: 0.2s ease-out;
+}
+
+.uploader-icon:active {
+  background: var(--app-theme-active);
+  transition: 0.2s ease-out;
+}
+
+.uploader-preview-img {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: #f9f9f9;
+  margin: 7px;
+}
+
+.uploader-preview-img:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-out;
+}
+
+.uploader-preview-img:active {
+  transform: scale(1.01);
+  transition: 0.2s ease-out;
+}
+
+.thumb-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  background: white;
+  box-shadow: var(--elevate-float);
+  cursor: pointer;
+  z-index: 20;
+}
+
+.thumb-close:hover {
+  background: var(--app-theme-danger);
+  transition: 0.1s ease-out;
+}
+
+.thumb-close:active {
+  transform: scale(0.95);
+  transition: 0.1s ease-out;
+}
+.thumb-close:hover svg {
+  color: white;
+  transition: 0.1s ease-out;
+}

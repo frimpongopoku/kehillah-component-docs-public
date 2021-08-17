@@ -1,0 +1,66 @@
+@import url("./../../shared/css/index.css");
+
+.radio-group-empty-circle {
+  height: 25px;
+  width: 25px;
+  border: solid 4px var(--app-theme-lighter);
+  margin: 4px;
+  border-radius: 100%;
+}
+
+.radio-group-default-container {
+  padding: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.radio-group-default-container p {
+  font-size: 17px;
+  margin: 4px;
+  text-transform: capitalize;
+  color: var(--app-theme-lighter);
+}
+
+.radio-group-default-container:hover p {
+  color: var(--app-theme-hover);
+  transition: 0.2s ease-in;
+}
+.radio-group-default-container:active p {
+  color: var(--app-theme-active);
+  transition: 0.2s ease-in;
+}
+
+.radio-group-default-container:hover .radio-group-empty-circle {
+  border-color: var(--app-theme-hover);
+  transition: 0.2s ease-in;
+}
+
+.radio-group-default-container:active .radio-group-empty-circle {
+  color: var(--app-theme-active);
+  transition: 0.2s ease-in;
+}
+
+.radio-group-default-container:hover .hovering-radio-circle {
+  color: var(--app-theme-hover);
+  transition: 0.2s ease-in;
+}
+
+.radio-group-default-container:active .hovering-radio-circle {
+  color: var(--app-theme-active);
+  transition: 0.2s ease-in;
+}
+
+.hovering-radio-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-52%, -52%);
+  left: 50%;
+  background: var(--app-theme-lighter);
+}

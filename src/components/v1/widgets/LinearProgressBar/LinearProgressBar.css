@@ -1,0 +1,16 @@
+.linear-progress,
+.linear-progress .inner-bar {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.linear-progress .inner-bar {
+  transition: all 0.5s ease-in-out;
+}
+
+.linear-percentage {
+  position: absolute;
+  right: 0;
+  top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}

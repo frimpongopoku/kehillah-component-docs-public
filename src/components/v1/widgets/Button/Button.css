@@ -1,0 +1,158 @@
+@import url("./../../shared/css/colors.css");
+:root {
+  --small-button-padding: 5px 18px;
+  --medium-button-padding: 8px 20px;
+  --default-button-padding: 10px 25px;
+  --large-button-padding: 12px 35px;
+
+  --small-font-size: 1rem;
+  --medium-font-size: 1.1rem;
+  --default-font-size: 1.2rem;
+  --large-font-size: 1.3rem;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.button {
+  padding: var(--medium-button-padding);
+  background: purple;
+  color: White;
+  border-radius: 4px;
+  box-shadow: 0 0 0;
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.button:hover {
+  background-color: darkslateblue !important;
+  border: 0.1rem solid darkslateblue !important;
+  color: white !important;
+}
+
+button[class*="danger"]:active {
+  animation: button-active 0.1s ease-in-out;
+}
+
+button[class*="themed"]:active {
+  animation: button-active 0.1s ease-in-out;
+}
+
+button[class*="success"]:active {
+  animation: button-active 0.1s ease-in-out;
+}
+
+@keyframes button-active {
+  from {
+    box-shadow: 0 0 0.05rem 0.1rem hsla(248, 39%, 39%, 0.5);
+  }
+  to {
+    box-shadow: 0 0 0.5rem 1rem hsla(248, 39%, 39%, 0.1);
+  }
+}
+
+@keyframes button-active-danger {
+  from {
+    box-shadow: 0 0 0.05rem 0.1rem hsla(2, 54%, 48%, 0.5);
+  }
+  to {
+    box-shadow: 0 0 0.5rem 1rem hsla(2, 54%, 48%, 0.1);
+  }
+}
+
+@keyframes button-active-success {
+  from {
+    box-shadow: 0 0 0.05rem 0.1rem hsla(133, 69%, 36%, 0.5);
+  }
+  to {
+    box-shadow: 0 0 0.5rem 1rem hsla(133, 69%, 36%, 0.1);
+  }
+}
+
+@keyframes button-active-themed {
+  from {
+    box-shadow: 0 0 0.05rem 0.1rem hsla(300, 62%, 15%, 0.5);
+  }
+  to {
+    box-shadow: 0 0 0.5rem 1rem hsla(300, 62%, 15%, 0.1);
+  }
+}
+
+.button[class*="small"] {
+  font-size: var(--small-font-size);
+  padding: var(--small-button-padding);
+}
+.button[class*="medium"] {
+  font-size: var(--medium-font-size);
+  padding: var(--medium-button-padding);
+}
+.button[class*="large"] {
+  font-size: var(--large-font-size);
+  padding: var(--large-button-padding);
+}
+
+.button[class*="themed"] {
+  background-color: var(--app-theme);
+  border: 0.1rem solid var(--app-theme);
+}
+.button[class*="success"] {
+  background-color: var(--app-theme-success);
+  border: 0.1rem solid var(--app-theme-success);
+}
+.button[class*="danger"] {
+  background-color: var(--app-theme-danger);
+  border: 0.1rem solid var(--app-theme-danger);
+}
+
+.button[class*="hollow"] {
+  background-color: transparent;
+}
+
+.button[class*="hollow-themed"] {
+  color: var(--app-theme);
+}
+
+.button[class*="hollow-success"] {
+  color: var(--app-theme-success);
+}
+
+.button[class*="hollow-danger"] {
+  color: var(--app-theme-danger);
+}
+
+.button[class*="default"] {
+  background-color: purple;
+  border: 0.1rem solid purple;
+}
+
+/* icon */
+.button-icon-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-icon-right {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.button-icon-left svg {
+  margin-right: 1rem;
+}
+
+.button-icon-right svg {
+  margin-left: 1rem;
+}
+
+.test {
+  width: 10rem;
+}

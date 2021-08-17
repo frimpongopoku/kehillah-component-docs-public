@@ -1,0 +1,27 @@
+const DEFAULT = "default",
+  SOLID = "solid",
+  HOLLOW = "hollow",
+  THEMED = "themed",
+  SUCCESS = "success",
+  DANGER = "danger",
+  SMALL = "small",
+  MEDIUM = "medium",
+  LARGE = "large",
+  LEFT = "left",
+  RIGHT = "right",
+  ICON = "icon";
+
+export {
+  DEFAULT,
+  SOLID,
+  HOLLOW,
+  THEMED,
+  SUCCESS,
+  DANGER,
+  SMALL,
+  MEDIUM,
+  LARGE,
+  LEFT,
+  RIGHT,
+  ICON,
+};

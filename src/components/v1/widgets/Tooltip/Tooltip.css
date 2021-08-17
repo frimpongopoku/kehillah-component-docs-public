@@ -1,0 +1,109 @@
+.tooltip {
+  position: relative;
+  --tooltip-top: -15px;
+  --tooltip-bottom: -15px;
+  --tooltip-right: -15px;
+  --tooltip-left: -15px;
+  font-family: sans-serif;
+  --tooltip-visibility: hidden;
+  --opacity: 0;
+  cursor: pointer;
+  --triangle-width: 10px;
+}
+
+.tooltip:hover {
+  --tooltip-visibility: visible;
+  --opacity: 1;
+}
+
+.tooltip::before,
+.tooltip::after {
+  visibility: var(--tooltip-visibility);
+  opacity: var(--opacity);
+  position: absolute;
+  left: 50%;
+  transition: all 0.2s linear;
+}
+
+.tooltip::after {
+  background-color: var(--tooltip-background);
+  color: var(--text-color);
+  width: clamp(50px, var(--tooltip-width), 200px);
+  text-align: center;
+}
+
+.tooltip::before {
+  border-color: var(--tooltip-background);
+}
+
+/* tooltip top  */
+.tooltip.top::before {
+  content: "";
+  border: var(--triangle-width) solid transparent;
+  border-top: var(--triangle-width) solid var(--tooltip-background);
+  top: var(--tooltip-top);
+  transform: translateX(-50%);
+}
+
+.tooltip.top::after {
+  top: var(--tooltip-top);
+  content: attr(text);
+  padding: 0.5rem 1rem;
+  transform: translate(-50%, -100%);
+  border-radius: 3px;
+}
+
+/* bottom tooltip */
+.tooltip.bottom::before {
+  content: "";
+  border: var(--triangle-width) solid transparent;
+  border-bottom: var(--triangle-width) solid var(--tooltip-background);
+  transform: translateX(-50%);
+  bottom: var(--tooltip-bottom);
+}
+
+.tooltip.bottom::after {
+  content: attr(text);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  transform: translate(-50%, 100%);
+  bottom: var(--tooltip-bottom);
+}
+
+/* left tooltip */
+.tooltip.left::before {
+  content: "";
+  border: var(--triangle-width) solid transparent;
+  border-left: var(--triangle-width) solid var(--tooltip-background);
+  left: -16px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.tooltip.left::after {
+  content: attr(text);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  left: var(--tooltip-left);
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+/* right tooltip */
+.tooltip.right::before {
+  content: "";
+  border: var(--triangle-width) solid transparent;
+  border-right: var(--triangle-width) solid var(--tooltip-background);
+  right: var(--tooltip-right);
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.tooltip.right::after {
+  content: attr(text);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  left: calc(100% - var(--tooltip-right));
+  top: 50%;
+  transform: translate(0, -50%);
+}

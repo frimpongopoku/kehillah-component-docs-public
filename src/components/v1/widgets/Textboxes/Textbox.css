@@ -1,0 +1,27 @@
+@import url("./../../shared/css/index.css");
+
+.textbox {
+  margin: 10px 0px;
+  padding: 13px;
+  font-size: 16px;
+  border: solid 1px var(--app-theme-lighter);
+  width: 100%;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.input {
+  border-left-width: 5px;
+}
+.textarea {
+  border-bottom-width: 5px;
+  resize: none;
+}
+.textbox:focus {
+  outline: 0;
+}
+
+.textbox::placeholder {
+  color: var(--app-placeholder-grey);
+}
